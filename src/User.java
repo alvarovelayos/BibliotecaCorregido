@@ -6,6 +6,7 @@ public class User {
     private String address;
     private String city;
 
+
     public String getDni() {
         return dni;
     }
@@ -52,5 +53,9 @@ public class User {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getFullName() {
+        return this.name + "  " + this.surname;
     }
 }
